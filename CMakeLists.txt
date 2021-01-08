@@ -25,7 +25,6 @@ ExternalProject_Add(pangolin
     -DBUILD_EXAMPLES=OFF
     -DBUILD_TOOLS=OFF
     -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/${Pangolin_BUILD_NAME}/${Pangolin_LOCAL_INSTALL_DIR}
-    BUILD_COMMAND $(MAKE) -j$(npoc)
     )
 
 set(Pangolin_INSTALL_DIR "${PROJECT_SOURCE_DIR}/${Pangolin_BUILD_NAME}/${Pangolin_LOCAL_INSTALL_DIR}" CACHE PATH "Pangolin install directory")
