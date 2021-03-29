@@ -120,6 +120,7 @@ int main(int argc, char *argv[]) {
 
   ICPOdometry icpOdom(640, 480, 319.5, 239.5, 528, 528);
 
+
   assert(!asFile.eof() && asFile.is_open());
 
   loadDepth(firstRaw);
