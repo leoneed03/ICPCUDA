@@ -34,7 +34,7 @@ set(Pangolin_LIBRARIES ${Pangolin_INSTALL_DIR}/lib/libpangolin.so)
 
 find_package(CUDA REQUIRED)
 
-file(GLOB srcs ICPOdometry.cpp ICPOdometry.h)
+file(GLOB srcs ICPOdometry.cpp include/ICPOdometry.h)
 file(GLOB cuda Cuda/*.cu Cuda/*.cpp Cuda/*.cuh Cuda/*.h)
 file(GLOB containers Cuda/containers/*.cpp Cuda/containers/*.h Cuda/containers/*.cu Cuda/containers/*.cuh)
 
